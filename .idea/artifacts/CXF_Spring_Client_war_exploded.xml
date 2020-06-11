@@ -1,0 +1,23 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="CXF_Spring_Client:war exploded">
+    <output-path>$PROJECT_DIR$/WebService/CXF_Spring_Client/target/CXF_Spring_Client</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>CXF_Spring_Client</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="CXF_Spring_Client" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/WebService/CXF_Spring_Client/target/CXF_Spring_Client/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="CXF_Spring_Client/web/Web" />
+    </root>
+  </artifact>
+</component>

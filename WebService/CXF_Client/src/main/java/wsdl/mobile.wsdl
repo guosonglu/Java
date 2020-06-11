@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions name="UAWebServiceService" targetNamespace="http://lgs.com.cn/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:tns="http://lgs.com.cn/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+<xs:schema elementFormDefault="unqualified" targetNamespace="http://lgs.com.cn/" version="1.0" xmlns:tns="http://lgs.com.cn/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="add" type="tns:add" />
+<xs:element name="addResponse" type="tns:addResponse" />
+<xs:element name="getAddressByNumber" type="tns:getAddressByNumber" />
+<xs:element name="getAddressByNumberResponse" type="tns:getAddressByNumberResponse" />
+<xs:complexType name="add">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int" />
+<xs:element name="arg1" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="addResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getAddressByNumber">
+<xs:sequence>
+<xs:element minOccurs="0" name="arg0" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+<xs:complexType name="getAddressByNumberResponse">
+<xs:sequence>
+<xs:element minOccurs="0" name="return" type="xs:string" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getAddressByNumberResponse">
+    <wsdl:part element="tns:getAddressByNumberResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getAddressByNumber">
+    <wsdl:part element="tns:getAddressByNumber" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="addResponse">
+    <wsdl:part element="tns:addResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="add">
+    <wsdl:part element="tns:add" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="UAWebService">
+    <wsdl:operation name="add">
+      <wsdl:input message="tns:add" name="add">
+    </wsdl:input>
+      <wsdl:output message="tns:addResponse" name="addResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAddressByNumber">
+      <wsdl:input message="tns:getAddressByNumber" name="getAddressByNumber">
+    </wsdl:input>
+      <wsdl:output message="tns:getAddressByNumberResponse" name="getAddressByNumberResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="UAWebServiceServiceSoapBinding" type="tns:UAWebService">
+    <soap12:binding style="document" transport="http://www.w3.org/2003/05/soap/bindings/HTTP/" />
+    <wsdl:operation name="add">
+      <soap12:operation soapAction="" style="document" />
+      <wsdl:input name="add">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="addResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAddressByNumber">
+      <soap12:operation soapAction="" style="document" />
+      <wsdl:input name="getAddressByNumber">
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output name="getAddressByNumberResponse">
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UAWebServiceService">
+    <wsdl:port binding="tns:UAWebServiceServiceSoapBinding" name="UAWebServicePort">
+      <soap:address location="http://127.0.0.1:8889/mobile" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

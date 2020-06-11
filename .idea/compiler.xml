@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="08_ArrayList" />
+        <module name="CXF_Spring_Server4" />
+        <module name="04_This" />
+        <module name="WS_Server" />
+        <module name="01_Array" />
+        <module name="05_ConstructionMethod" />
+        <module name="11_Arrays" />
+        <module name="03_ObjectOriented" />
+        <module name="CXF_Server" />
+        <module name="CXF_Client" />
+        <module name="02_ArrayAndRam" />
+        <module name="07_Random" />
+        <module name="10_Static" />
+        <module name="CXF_RS_Server" />
+        <module name="13_Extends" />
+        <module name="06_Scanner" />
+        <module name="12_Math" />
+        <module name="09_String" />
+        <module name="WS_Client" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="07_Random" target="1.5" />
+      <module name="CXF_Spring_Client" target="1.7" />
+      <module name="CXF_Spring_Server" target="1.7" />
+      <module name="CXF_Spring_Server1" target="1.5" />
+      <module name="CXF_Spring_Server2" target="1.5" />
+      <module name="CXF_Spring_Server3" target="1.7" />
+      <module name="CXF_Spring_Service" target="1.7" />
+      <module name="Extends" target="1.5" />
+      <module name="JavaLearning" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

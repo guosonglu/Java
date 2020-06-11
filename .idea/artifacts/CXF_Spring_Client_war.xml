@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="CXF_Spring_Client:war">
+    <output-path>$PROJECT_DIR$/WebService/CXF_Spring_Client/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>CXF_Spring_Client</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="CXF_Spring_Client.war">
+      <element id="artifact" artifact-name="CXF_Spring_Client:war exploded" />
+    </root>
+  </artifact>
+</component>
