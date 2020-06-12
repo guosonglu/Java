@@ -14,6 +14,7 @@
         <module>CXF_Server</module>
         <module>CXF_Client</module>
         <module>CXF_RS_Server</module>
+        <module>OAuth_Server</module>
     </modules>
     <!-- ##########依赖属性参数配置 start############### -->
     <!--sss-->

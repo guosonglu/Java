@@ -11,7 +11,6 @@ public class Demo1 {
         student1.fun1();
         student1.funFu(); //10
         student1.funZi(); //20
-        //重名变量
         student1.funZi2();//30 20 10
     }
 }
