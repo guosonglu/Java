@@ -14,15 +14,15 @@ public class Student extends Person {
         System.out.println("我是一个学生");
     }
 
-    public void funZi(){
-        System.out.println(age);
+    public void funZi() {
+        super.fun1();
     }
-
     //变量重名情况
     public void funZi2(){
+        System.out.println("同名变量处理");
         int age=30;
-        System.out.println(age);
-        System.out.println(this.age);
-        System.out.println(super.age);
+        System.out.println("局部变量："+age);
+        System.out.println("子类变量"+this.age);
+        System.out.println("父类变量"+super.age);
     }
 }

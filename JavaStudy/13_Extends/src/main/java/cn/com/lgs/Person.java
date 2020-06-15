@@ -14,6 +14,6 @@ public class Person {
     }
 
     public void funFu(){
-        System.out.println(age);
+        System.out.println("我是父类方法");
     }
 }

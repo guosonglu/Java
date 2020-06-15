@@ -9,8 +9,8 @@ public class Demo1 {
     public static void main(String[] args) {
         Student student1=new Student();
         student1.fun1();
-        student1.funFu(); //10
-        student1.funZi(); //20
+        student1.funZi();
+        student1.funFu();
         student1.funZi2();//30 20 10
     }
 }
