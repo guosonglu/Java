@@ -15,14 +15,14 @@
         <module>04_This</module>
         <module>05_ConstructionMethod</module>
         <module>06_Scanner</module>
-        <module>Random</module>
+        <module>07_Random</module>
         <module>08_ArrayList</module>
         <module>09_String</module>
         <module>10_Static</module>
         <module>11_Arrays</module>
         <module>12_Math</module>
-        <module>Extends</module>
         <module>13_Extends</module>
+        <module>14_Abstract</module>
     </modules>
 
 

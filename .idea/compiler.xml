@@ -10,14 +10,15 @@
         <module name="OAuth_Server" />
         <module name="CXF_Spring_Server4" />
         <module name="04_This" />
+        <module name="05_ConstructionMethod" />
         <module name="JavaWeb" />
         <module name="WS_Server" />
         <module name="01_Array" />
-        <module name="05_ConstructionMethod" />
         <module name="11_Arrays" />
         <module name="03_ObjectOriented" />
         <module name="CXF_Server" />
         <module name="CXF_Client" />
+        <module name="14_Abstract" />
         <module name="02_ArrayAndRam" />
         <module name="07_Random" />
         <module name="10_Static" />

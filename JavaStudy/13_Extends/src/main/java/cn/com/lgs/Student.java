@@ -11,14 +11,17 @@ public class Student extends Person {
 
     @Override
     public void fun1() {
+        System.out.println("fun1");
         System.out.println("我是一个学生");
     }
 
     public void funZi() {
+        System.out.println("funZi");
         super.fun1();
     }
     //变量重名情况
     public void funZi2(){
+        System.out.println("funZi2");
         System.out.println("同名变量处理");
         int age=30;
         System.out.println("局部变量："+age);
