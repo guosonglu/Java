@@ -10,12 +10,13 @@
         <module name="OAuth_Server" />
         <module name="CXF_Spring_Server4" />
         <module name="04_This" />
-        <module name="05_ConstructionMethod" />
         <module name="JavaWeb" />
         <module name="WS_Server" />
         <module name="01_Array" />
+        <module name="05_ConstructionMethod" />
         <module name="11_Arrays" />
         <module name="03_ObjectOriented" />
+        <module name="15_Interface" />
         <module name="CXF_Server" />
         <module name="CXF_Client" />
         <module name="14_Abstract" />
@@ -30,16 +31,6 @@
         <module name="WS_Client" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="07_Random" target="1.5" />
-      <module name="CXF_Spring_Client" target="1.7" />
-      <module name="CXF_Spring_Server" target="1.7" />
-      <module name="CXF_Spring_Server1" target="1.5" />
-      <module name="CXF_Spring_Server2" target="1.5" />
-      <module name="CXF_Spring_Server3" target="1.7" />
-      <module name="CXF_Spring_Service" target="1.7" />
-      <module name="Extends" target="1.5" />
-      <module name="JavaLearning" target="1.5" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8" />
   </component>
 </project>
