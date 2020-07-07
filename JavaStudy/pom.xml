@@ -24,6 +24,9 @@
         <module>13_Extends</module>
         <module>14_Abstract</module>
         <module>15_Interface</module>
+        <module>16_Polymorphism</module>
+        <module>17_final</module>
+        <module>00_Basic</module>
     </modules>
 
 
