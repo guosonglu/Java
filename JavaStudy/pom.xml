@@ -27,6 +27,8 @@
         <module>16_Polymorphism</module>
         <module>17_final</module>
         <module>00_Basic</module>
+        <module>18_Authority</module>
+        <module>19_InnerClass</module>
     </modules>
 
 
