@@ -29,6 +29,9 @@
         <module>00_Basic</module>
         <module>18_Authority</module>
         <module>19_InnerClass</module>
+        <module>20_Object</module>
+        <module>21_Date</module>
+        <module>22_Calendar</module>
     </modules>
 
 
