@@ -10,6 +10,8 @@ import java.util.Calendar;
 public class DemoTest {
     public static void main(String[] args) {
         Calendar calendar=Calendar.getInstance();  //静态方法获得子类对象
-        System.out.println(calendar.YEAR);
+        System.out.println(calendar.get(Calendar.YEAR));  //
+        calendar.set(Calendar.MONTH,5);  //设置月份
+        System.out.println(calendar.getTime());
     }
 }

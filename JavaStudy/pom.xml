@@ -32,6 +32,11 @@
         <module>20_Object</module>
         <module>21_Date</module>
         <module>22_Calendar</module>
+        <module>23_System</module>
+        <module>24_StringBuilder</module>
+        <module>25_WrapperClass</module>
+        <module>27_Collection</module>
+        <module>26_Exception</module>
     </modules>
 
 
