@@ -13,6 +13,7 @@
         <module name="25_WrapperClass" />
         <module name="24_StringBuilder" />
         <module name="11_Arrays" />
+        <module name="02_ArrayAndRam" />
         <module name="13_Extends" />
         <module name="08_ArrayList" />
         <module name="23_System" />
@@ -23,6 +24,7 @@
         <module name="26_Exception" />
         <module name="17_final" />
         <module name="00_Basic" />
+        <module name="29_Map" />
         <module name="04_This" />
         <module name="27_Collection" />
         <module name="WS_Server" />
@@ -33,7 +35,7 @@
         <module name="WrapperClass" />
         <module name="OAuth_Server" />
         <module name="07_Random" />
-        <module name="26_Collection" />
+        <module name="28_Genericity" />
         <module name="15_Interface" />
         <module name="05_ConstructionMethod" />
         <module name="JavaWeb" />
@@ -46,13 +48,11 @@
         <module name="19_InnerClass" />
         <module name="CXF_Client" />
         <module name="CXF_Spring_Server4" />
-        <module name="02_ArrayAndRam" />
+        <module name="26_Collection" />
         <module name="12_Math" />
         <module name="CXF_Server" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8">
-      <module name="27_Collection" target="1.5" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8" />
   </component>
 </project>
