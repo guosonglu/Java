@@ -39,6 +39,7 @@
         <module>26_Exception</module>
         <module>28_Genericity</module>
         <module>29_Map</module>
+        <module>30_Io</module>
     </modules>
 
 

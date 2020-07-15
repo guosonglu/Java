@@ -20,7 +20,7 @@
         <module name="16_Polymorphism" />
         <module name="20_Object" />
         <module name="Random" />
-        <module name="06_Scanner" />
+        <module name="30_Io" />
         <module name="26_Exception" />
         <module name="17_final" />
         <module name="00_Basic" />
@@ -38,8 +38,9 @@
         <module name="28_Genericity" />
         <module name="15_Interface" />
         <module name="05_ConstructionMethod" />
-        <module name="JavaWeb" />
         <module name="WS_Client" />
+        <module name="JavaWeb" />
+        <module name="06_Scanner" />
         <module name="21_Date" />
         <module name="18_Authority" />
         <module name="Polymorphism" />
