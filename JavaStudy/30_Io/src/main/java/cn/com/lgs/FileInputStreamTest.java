@@ -10,7 +10,7 @@ import java.io.IOException;
  */
 public class FileInputStreamTest {
     public static void main(String[] args) throws IOException {
-        FileInputStream fileInputStream=new FileInputStream("E:\\JavaIotest\\a.txt");
+        FileInputStream fileInputStream=new FileInputStream("JavaIotest\\a.txt");
         byte[] bytes=new byte[1024];
         int len;
         while ((len=fileInputStream.read(bytes))!=-1){

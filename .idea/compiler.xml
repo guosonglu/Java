@@ -8,12 +8,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="01_信息输出" />
         <module name="14_Abstract" />
+        <module name="26_Collection" />
         <module name="Authority" />
         <module name="01_Array" />
         <module name="25_WrapperClass" />
         <module name="24_StringBuilder" />
         <module name="11_Arrays" />
-        <module name="02_ArrayAndRam" />
         <module name="13_Extends" />
         <module name="08_ArrayList" />
         <module name="23_System" />
@@ -49,7 +49,7 @@
         <module name="19_InnerClass" />
         <module name="CXF_Client" />
         <module name="CXF_Spring_Server4" />
-        <module name="26_Collection" />
+        <module name="02_ArrayAndRam" />
         <module name="12_Math" />
         <module name="CXF_Server" />
       </profile>
