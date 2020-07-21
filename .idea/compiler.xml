@@ -7,19 +7,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="01_信息输出" />
-        <module name="CXF_Client" />
         <module name="14_Abstract" />
+        <module name="26_Collection" />
         <module name="Authority" />
         <module name="01_Array" />
         <module name="25_WrapperClass" />
         <module name="24_StringBuilder" />
         <module name="11_Arrays" />
-        <module name="02_ArrayAndRam" />
         <module name="13_Extends" />
         <module name="08_ArrayList" />
+        <module name="31_Thread" />
         <module name="23_System" />
         <module name="16_Polymorphism" />
         <module name="20_Object" />
+        <module name="06_Scanner" />
         <module name="Random" />
         <module name="30_Io" />
         <module name="26_Exception" />
@@ -39,7 +40,7 @@
         <module name="28_Genericity" />
         <module name="15_Interface" />
         <module name="05_ConstructionMethod" />
-        <module name="JavaWeb" />
+        <module name="01_Sql" />
         <module name="WS_Client" />
         <module name="21_Date" />
         <module name="18_Authority" />
@@ -47,9 +48,9 @@
         <module name="03_ObjectOriented" />
         <module name="09_String" />
         <module name="19_InnerClass" />
-        <module name="06_Scanner" />
+        <module name="CXF_Client" />
         <module name="CXF_Spring_Server4" />
-        <module name="26_Collection" />
+        <module name="02_ArrayAndRam" />
         <module name="12_Math" />
         <module name="CXF_Server" />
       </profile>
