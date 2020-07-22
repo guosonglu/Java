@@ -41,6 +41,7 @@
         <module>29_Map</module>
         <module>30_Io</module>
         <module>31_Thread</module>
+        <module>32_Network</module>
     </modules>
 
 

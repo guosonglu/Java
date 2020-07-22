@@ -4,6 +4,7 @@ package cn.com.lgs;
  * @Author luGuoSong
  * @Date 2020/7/21 13:54
  * @Version 1.0
+ * 卖票
  */
 public class TicketsTest {
     public static void main(String[] args) {
