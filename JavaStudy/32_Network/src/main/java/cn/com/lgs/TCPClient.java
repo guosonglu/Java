@@ -21,6 +21,9 @@ public class TCPClient {
         //获取输出流，写数据
         String line;
         while ((line=bufferedReader.readLine())!=null){
+            if (line.equals("exit")){
+                break;
+            }
             bufferedWriter.write(line);
             bufferedWriter.newLine();
             bufferedWriter.flush();

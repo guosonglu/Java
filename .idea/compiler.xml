@@ -7,14 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="01_信息输出" />
-        <module name="CXF_Client" />
         <module name="14_Abstract" />
         <module name="26_Collection" />
         <module name="Authority" />
         <module name="01_Array" />
         <module name="25_WrapperClass" />
+        <module name="33_Lambda" />
         <module name="24_StringBuilder" />
         <module name="11_Arrays" />
+        <module name="02_JDBC" />
         <module name="13_Extends" />
         <module name="08_ArrayList" />
         <module name="31_Thread" />
@@ -24,6 +25,7 @@
         <module name="Random" />
         <module name="30_Io" />
         <module name="26_Exception" />
+        <module name="01_Sql" />
         <module name="17_final" />
         <module name="00_Basic" />
         <module name="29_Map" />
@@ -40,8 +42,8 @@
         <module name="28_Genericity" />
         <module name="15_Interface" />
         <module name="05_ConstructionMethod" />
-        <module name="01_Sql" />
         <module name="WS_Client" />
+        <module name="06_Scanner" />
         <module name="21_Date" />
         <module name="18_Authority" />
         <module name="Polymorphism" />
@@ -49,13 +51,15 @@
         <module name="03_ObjectOriented" />
         <module name="09_String" />
         <module name="19_InnerClass" />
-        <module name="06_Scanner" />
+        <module name="CXF_Client" />
         <module name="CXF_Spring_Server4" />
         <module name="02_ArrayAndRam" />
         <module name="12_Math" />
         <module name="CXF_Server" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8" />
+    <bytecodeTargetLevel target="8">
+      <module name="Html" target="1.7" />
+    </bytecodeTargetLevel>
   </component>
 </project>
