@@ -19,6 +19,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/JavaPractice/01_信息输出/pom.xml" />
         <option value="$PROJECT_DIR$/JavaStudy/Extends/pom.xml" />
         <option value="$PROJECT_DIR$/JavaWeb/Html/pom.xml" />
       </set>

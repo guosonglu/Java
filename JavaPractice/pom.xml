@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>01_信息输出</module>
+        <module>Java1200</module>
     </modules>
 
 

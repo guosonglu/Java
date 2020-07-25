@@ -43,6 +43,7 @@
         <module>31_Thread</module>
         <module>32_Network</module>
         <module>33_Lambda</module>
+        <module>34_FunctionalInterface</module>
     </modules>
 
 
