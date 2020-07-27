@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ch">
+<html lang="ch" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
@@ -7,7 +7,7 @@
 <body>
 <!--文本标签-->
 <hr/>
-文本标签
+<h1>01、文本标签</h1>
 <!--h1-h6-->
 <h1>h1</h1>
 <h2>h2</h2>
@@ -31,8 +31,103 @@
 <!--居中-->
 <center>居中</center>
 <hr/>
-文本标签练习
-
-
+<h1>01、文本标签练习</h1>
+<h1>公司简介</h1>
+<hr color="orange" size="2"/>
+<p><font color="red">"中关村黑马程序员训练营"</font>是由<b><i>传智播客</i></b>联合中关村软件园、CSDN，
+    并委托传智播客进行教学实施的软件开发高端培训机构，致力于服务各大软件企业，解决当前软件开发技术飞速发展， 而企业招不到优秀人才的困扰。
+</p>
+<p>目前，“中关村黑马程序员训练营”已成长为行业“学员质量好、课程内容深、企业满意”的移动开发高端训练基地， 并被评为中关村软件园重点扶持人才企业。
+    黑马程序员的学员多为大学毕业后，有理想、有梦想，想从事IT行业，而没有环境和机遇改变自己命运的年轻人。 黑马程序员的学员筛选制度，远比现在90%以上的企业招聘流程更为严格。任何一名学员想成功入学“黑马程序员”，
+    必须经历长达2个月的面试流程，这些流程中不仅包括严格的技术测试、自学能力测试，还包括性格测试、压力测试、 品德测试等等测试。毫不夸张地说，黑马程序员训练营所有学员都是精挑细选出来的。百里挑一的残酷筛选制度确
+    保学员质量，并降低企业的用人风险。
+</p>
+<p>中关村黑马程序员训练营不仅着重培养学员的基础理论知识，更注重培养项目实施管理能力，并密切关注技术革新， 不断引入先进的技术，研发更新技术课程，确保学员进入企业后不仅能独立从事开发工作，更能给企业带来新的技术体系和理念。</p>
+<p>一直以来，黑马程序员以技术视角关注IT产业发展，以深度分享推进产业技术成长，致力于弘扬技术创新，倡导分享、 开放和协作，努力打造高质量的IT人才服务平台。
+</p>
+<hr color="orange" size="2"/>
+<center><font color="#a9a9a9" size="1">江苏传智播客教育科技股份有限公司</font></center>
+<center><font color="#a9a9a9" size="1">版权所有Copyright 2006-2018, All Rights Reserved 苏ICP备16007882</font></center>
+<hr>
+<!--图片标签-->
+<h1>02、图片标签</h1>
+<img src="../../img/icon_5.jpg" width="50" align="left" alt="图片加载失败内容"><br>
+<!--列表标签-->
+<h1>03、列表标签</h1>
+<h2>1、有序列表</h2>
+<ol type="a" start="2">
+    <li>222</li>
+    <li>333</li>
+    <li>111</li>
+    <li>212</li>
+</ol>
+<h2>2、无序列表</h2>
+<ul>
+    <li>2222</li>
+    <li>1111</li>
+    <li>44</li>
+    <li>333</li>
+</ul>
+<!--链接标签-->
+<h1>04、链接标签</h1>
+<a href="https://www.baidu.com/" target="_blank">超链接</a>
+<!--块标签-->
+<h1>05、块标签</h1>
+<span>行内标签1</span>
+<span>行内标签2</span>
+<div>一整行1</div>
+<div>一整行2</div>
+<!--语义化标签-->
+<h1>06_语义化标签</h1>
+<header>头</header>
+<footer>尾</footer>
+<!--表格-->
+<h1>07、表格</h1>
+<table border="1" width="50%" cellspacing="0" align="center">
+    <caption>表格标题</caption>
+    <tr>
+        <th>表头1</th>
+        <th>表头2</th>
+        <th>表头3</th>
+    </tr>
+    <tr>
+        <td bgcolor="gray" rowspan="2">1.1</td>
+        <td>1.2</td>
+        <td>1.3</td>
+    </tr>
+    <tr>
+        <td colspan="2">2.1</td>
+    </tr>
+</table>
+<!--表单-->
+<!--表单要提交，要指定name-->
+<h1>08、表单</h1>
+<form action="#" method="get">
+    <label for="username">用户名：</label><input id="username" type="text" name="username" placeholder="请输入用户名"><br>
+    密码：<input type="password" name="password"><br>
+    性别：<input type="radio" name="gender" value="nan" checked> 男
+    <input type="radio" name="gender" value="nv">女 <br>
+    爱好：<input type="checkbox" name="hobby" value="hobby1"> 学习
+    <input type="checkbox" name="hobby" value="hobby2"> 写代码
+    <input type="checkbox" name="hobby" value="hobby3"> 加班 <br>
+    <label for="fileInput">文件：</label><input id="fileInput" name="file1" type="file"><br>
+    隐藏标签：<input name="hidden" type="hidden" value="aaa"><br>
+    <input type="button" value="普通按钮"><br>
+    <input type="image" src="../../img/icon_5.jpg"><br> <!--点击会提交表单-->
+    <!--Html5新Type-->
+    取色器：<input type="color" name="color"><br>
+    生日：<input type="date" name="birthday"><br>
+    时间：<input type="datetime-local" name="time"><br>
+    邮箱：<input type="email" name="email"><br>
+    年龄：<input type="number" name="age"><br>
+    <!--下拉列表-->
+    省份：<select name="province">
+    <option value="江苏" selected>江苏省</option>
+    <option value="浙江">浙江省</option>
+    <option value="安徽">安徽省</option>
+    </select><br>
+    描述：<textarea cols="20" rows="5" name="des"></textarea><br>
+    <input type="submit" value="提交">
+</form>
 </body>
 </html>

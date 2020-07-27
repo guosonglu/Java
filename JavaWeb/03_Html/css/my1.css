@@ -1,0 +1,59 @@
+.div3{
+    color: green;
+}
+/*并集选择器*/
+.p1,.p2{
+    color:#0d6efd;
+}
+/*子选择器*/
+div p{
+    color: red;
+}
+/*父选择器*/
+div>p{
+    border: 1px solid;
+}
+/*属性选择器*/
+input[type="text"]{
+    border: 5px solid;
+}
+/*伪类选择器*/
+a:link{
+    color: orangered;
+    size: 10px;
+}
+
+a:visited{
+    color: gray;
+    size: 20px;
+}
+a:active{
+    color: red;
+}
+a:hover{
+    color: #1c7430;
+}
+
+div{
+    border: 1px solid;
+}
+#div1{
+    width: 100px;
+    height: 100px;
+    padding: 125px; //内边距
+}
+#div2{
+    width: 50px;
+    height:50px;
+    margin: 25px; //外边距
+}
+/*浮动*/
+#div3{
+    float: left;
+}
+#div4{
+    float: left;
+}
+#div5{
+    float: right;
+}
