@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaWeb/03_Html/03_Html.iml" filepath="$PROJECT_DIR$/JavaWeb/03_Html/03_Html.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb/05_Tomcat/05_Tomcat.iml" filepath="$PROJECT_DIR$/JavaWeb/05_Tomcat/05_Tomcat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaWeb/06_Servlet/06_Servlet.iml" filepath="$PROJECT_DIR$/JavaWeb/06_Servlet/06_Servlet.iml" />
       <module fileurl="file://$PROJECT_DIR$/WebService/java_first_spring_support/java_first_spring_support.iml" filepath="$PROJECT_DIR$/WebService/java_first_spring_support/java_first_spring_support.iml" />
     </modules>
   </component>
