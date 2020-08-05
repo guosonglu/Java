@@ -17,7 +17,17 @@ import java.io.PrintWriter;
 public class ResponseDemo extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+//        设置状态码
+        resp.setStatus(200);
+        //resp.setCharacterEncoding("utf-8");
+        ///resp.setHeader("content-type","text/html;charset=utf-8");
+        resp.setContentType("text/html;charset=utf-8");
         PrintWriter writer = resp.getWriter();
         writer.write("测试");
+    }
+
+    @Override
+    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        this.doPost(req, resp);
     }
 }
