@@ -22,10 +22,10 @@
         <module name="23_System" />
         <module name="16_Polymorphism" />
         <module name="20_Object" />
-        <module name="06_Scanner" />
         <module name="Random" />
         <module name="30_Io" />
         <module name="26_Exception" />
+        <module name="01_Sql" />
         <module name="17_final" />
         <module name="00_Basic" />
         <module name="29_Map" />
@@ -42,9 +42,9 @@
         <module name="28_Genericity" />
         <module name="15_Interface" />
         <module name="05_ConstructionMethod" />
-        <module name="01_Sql" />
-        <module name="34_FunctionalInterface" />
         <module name="WS_Client" />
+        <module name="34_FunctionalInterface" />
+        <module name="06_Scanner" />
         <module name="21_Date" />
         <module name="18_Authority" />
         <module name="Polymorphism" />
