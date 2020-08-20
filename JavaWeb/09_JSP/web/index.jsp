@@ -22,6 +22,7 @@
     request.setAttribute("name", "zhangsan");
     session.setAttribute("name", "lisi");
     session.setAttribute("age", 18);
+    session.setAttribute("num", 3);
     //插入对象
     User user = new User();
     user.setName("张三");
@@ -50,17 +51,36 @@ ${user.age}<br>
 ${list[1]}<br>
 
 <%--JSTL标签使用--%>
+<%--if标签--%>
 <c:if test="true">
     显示
 </c:if>
 <c:if test="false">
     不显示
 </c:if>
-<c:if test="${not empty strings}">
-strings集合不为空
+<c:if test="${not empty list}">
+    strings集合不为空
 </c:if>
-<c:if test="${empty strings}">
+<c:if test="${empty list}">
     strings集合为空
 </c:if>
+<%--choose标签--%>
+<c:choose>
+    <c:when test="${num==1}">星期一</c:when>
+    <c:when test="${num==2}">星期二</c:when>
+    <c:when test="${num==3}">星期三</c:when>
+    <c:when test="${num==4}">星期四</c:when>
+    <c:when test="${num==5}">星期五</c:when>
+    <c:when test="${num==6}">星期六</c:when>
+    <c:when test="${num==7}">星期日</c:when>
+    <c:otherwise>输入数字有误</c:otherwise>
+</c:choose><br>
+<%--foreach标签--%>
+<c:forEach begin="1" end="10" var="i" step="2" varStatus="s">
+    ${i} ${s.index} ${s.count}<br>
+</c:forEach>
+<c:forEach items="${list}" var="string">
+    ${string}<br>
+</c:forEach>
 </body>
 </html>
