@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--无参构造方法-->
+    <bean id="userDao" class="cn.com.lgs.dao.Impl.UserDaoImpl" scope="prototype" init-method="init"
+          destroy-method="destory">
+    </bean>
+    <!--工厂静态方法获取对象-->
+    <bean id="userDao2" class="cn.com.lgs.factory.UserDaoFactory" factory-method="getUserDao1"></bean>
+    <!--工厂非静态方法获取对象-->
+    <bean id="factoryUserDao" class="cn.com.lgs.factory.UserDaoFactory"></bean>
+    <bean id="userDao3" factory-bean="factoryUserDao" factory-method="getUserDao2"></bean>
+</beans>

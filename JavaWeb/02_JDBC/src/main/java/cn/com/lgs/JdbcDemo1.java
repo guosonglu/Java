@@ -27,5 +27,8 @@ public class JdbcDemo1 {
         while (resultSet.next()){
             System.out.println(resultSet.getString("name"));
         }
+        //释放资源
+        statement.close();
+        connection.close();
     }
 }
