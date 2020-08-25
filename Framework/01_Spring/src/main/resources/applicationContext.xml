@@ -4,9 +4,19 @@
        xmlns:p="http://www.springframework.org/schema/p"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+
+    <bean id="user1" class="cn.com.lgs.domain.User">
+        <property name="userName" value="张三"></property>
+        <property name="age" value="18"></property>
+    </bean>
+    <bean id="user2" class="cn.com.lgs.domain.User">
+        <property name="userName" value="李四"></property>
+        <property name="age" value="20"></property>
+    </bean>
     <!--无参构造方法-->
     <bean id="userDao" class="cn.com.lgs.dao.Impl.UserDaoImpl" scope="prototype" init-method="init"
           destroy-method="destory">
+        <property name="userName" value="张三"></property>
     </bean>
     <!--工厂静态方法获取对象-->
     <bean id="userDao2" class="cn.com.lgs.factory.UserDaoFactory" factory-method="getUserDao1"></bean>
@@ -16,7 +26,32 @@
     <!--配置userService，同时将userDao进行依赖注入-->
     <bean id="userService" class="cn.com.lgs.service.Impl.UserServiceImpl">
         <property name="userDao" ref="userDao"></property>
+        <!--集合注入-->
+        <property name="list">
+            <list>
+                <value>111</value>
+                <value>222</value>
+                <value>333</value>
+            </list>
+        </property>
+        <property name="users">
+            <map>
+                <entry key="u1" value-ref="user1"></entry>
+                <entry key="u2" value-ref="user2"></entry>
+            </map>
+        </property>
+        <property name="properties">
+            <props>
+                <prop key="p1">value1</prop>
+                <prop key="p2">value2</prop>
+                <prop key="p3">value3</prop>
+            </props>
+        </property>
     </bean>
     <!--使用p标签依赖注入-->
     <!--<bean id="userService" class="cn.com.lgs.service.Impl.UserServiceImpl" p:userDao-ref="userDao"/>-->
+    <!--使用构造方法进行依赖注入-->
+    <bean id="userService2" class="cn.com.lgs.service.Impl.UserServiceImpl">
+        <constructor-arg name="userDao" ref="userDao"></constructor-arg>
+    </bean>
 </beans>

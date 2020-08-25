@@ -6,5 +6,6 @@ package cn.com.lgs.dao;
  * @Version 1.0
  */
 public interface UserDao {
+    public String getUserName();
     public void save();
 }

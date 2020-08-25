@@ -8,6 +8,17 @@ import cn.com.lgs.dao.UserDao;
  * @Version 1.0
  */
 public class UserDaoImpl implements UserDao {
+    //普通属性依赖注入
+    private String userName;
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
     public UserDaoImpl(){
         System.out.println("对象被创建了");
     }

@@ -1,5 +1,6 @@
 package cn.com.lgs;
 
+import cn.com.lgs.dao.UserDao;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -13,10 +14,11 @@ public class SpringTest {
     //测试scope属性
     public void test1(){
         ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("applicationContext.xml");
-        Object userDao1 = applicationContext.getBean("userDao");
+        UserDao userDao1 = (UserDao) applicationContext.getBean("userDao");
         Object userDao2 = applicationContext.getBean("userDao");
         System.out.println(userDao1);
         System.out.println(userDao2);
+        System.out.println(userDao1.getUserName());
         //通过工厂静态方法获取对象
         Object userDao21 = applicationContext.getBean("userDao2");
         System.out.println(userDao21);
