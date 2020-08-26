@@ -30,5 +30,6 @@ public class JdbcDemo1 {
         //释放资源
         statement.close();
         connection.close();
+
     }
 }
