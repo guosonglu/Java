@@ -24,12 +24,11 @@ public class JdbcDemo1 {
         //执行sql
         ResultSet resultSet = statement.executeQuery(sql);
         //处理结果
-        while (resultSet.next()){
+        while (resultSet.next()) {
             System.out.println(resultSet.getString("name"));
         }
         //释放资源
         statement.close();
         connection.close();
-
     }
 }
