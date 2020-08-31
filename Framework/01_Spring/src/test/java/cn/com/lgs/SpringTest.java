@@ -1,8 +1,11 @@
 package cn.com.lgs;
 
+import cn.com.lgs.config.BeanConfig;
+import cn.com.lgs.dao.Student;
 import cn.com.lgs.dao.UserDao;
 import com.alibaba.druid.pool.DruidDataSource;
 import org.junit.Test;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.sql.DataSource;
@@ -40,5 +43,13 @@ public class SpringTest {
         DataSource dataSource = (DataSource) context.getBean("dataSource");
         Connection connection = dataSource.getConnection();
         System.out.println(connection);
+    }
+
+    //测试使用类配置Spring
+    @Test
+    public void test3(){
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(BeanConfig.class);
+        Student student = (Student) context.getBean("Student");
+        student.save();
     }
 }

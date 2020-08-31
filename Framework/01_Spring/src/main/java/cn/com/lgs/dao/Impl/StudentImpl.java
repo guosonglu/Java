@@ -1,6 +1,7 @@
 package cn.com.lgs.dao.Impl;
 
 import cn.com.lgs.dao.Student;
+import org.springframework.stereotype.Component;
 
 /**
  * @Author luGuoSong
@@ -8,6 +9,7 @@ import cn.com.lgs.dao.Student;
  * @Version 1.0
  * 使用注解开发
  */
+@Component("Student")
 public class StudentImpl implements Student {
     public void save() {
         System.out.println("Dao层方法执行");
