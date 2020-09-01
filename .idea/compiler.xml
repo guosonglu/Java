@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="34_FunctionalInterface" />
         <module name="14_Abstract" />
         <module name="04_xml" />
         <module name="Authority" />
@@ -22,10 +23,10 @@
         <module name="23_System" />
         <module name="16_Polymorphism" />
         <module name="20_Object" />
+        <module name="06_Scanner" />
         <module name="Random" />
         <module name="30_Io" />
         <module name="26_Exception" />
-        <module name="01_Sql" />
         <module name="FunctionalInterface" />
         <module name="17_final" />
         <module name="00_Basic" />
@@ -43,10 +44,10 @@
         <module name="28_Genericity" />
         <module name="15_Interface" />
         <module name="05_ConstructionMethod" />
-        <module name="WS_Client" />
+        <module name="01_Sql" />
         <module name="35_Reflection" />
-        <module name="34_FunctionalInterface" />
-        <module name="06_Scanner" />
+        <module name="Network" />
+        <module name="WS_Client" />
         <module name="21_Date" />
         <module name="01_Spring" />
         <module name="18_Authority" />
@@ -56,7 +57,6 @@
         <module name="09_String" />
         <module name="19_InnerClass" />
         <module name="CXF_Client" />
-        <module name="Network" />
         <module name="CXF_Spring_Server4" />
         <module name="26_Collection" />
         <module name="Java1200" />

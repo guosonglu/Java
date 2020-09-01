@@ -2,31 +2,33 @@
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:aop="http://www.springframework.org/schema/aop"
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
     <import resource="applicationContext2.xml"/>
 
-    <bean id="user1" class="cn.com.lgs.domain.User">
+    <bean id="user1" class="cn.com.lgs.ioc.domain.User">
         <property name="userName" value="张三"></property>
         <property name="age" value="18"></property>
     </bean>
-    <bean id="user2" class="cn.com.lgs.domain.User">
+    <bean id="user2" class="cn.com.lgs.ioc.domain.User">
         <property name="userName" value="李四"></property>
         <property name="age" value="20"></property>
     </bean>
     <!--无参构造方法-->
-    <bean id="userDao" class="cn.com.lgs.dao.Impl.UserDaoImpl" scope="prototype" init-method="init"
+    <bean id="userDao" class="cn.com.lgs.ioc.dao.Impl.UserDaoImpl" scope="prototype" init-method="init"
           destroy-method="destory">
         <property name="userName" value="张三"></property>
     </bean>
     <!--工厂静态方法获取对象-->
-    <bean id="userDao2" class="cn.com.lgs.factory.UserDaoFactory" factory-method="getUserDao1"></bean>
+    <bean id="userDao2" class="cn.com.lgs.ioc.factory.UserDaoFactory" factory-method="getUserDao1"></bean>
     <!--工厂非静态方法获取对象-->
-    <bean id="factoryUserDao" class="cn.com.lgs.factory.UserDaoFactory"></bean>
+    <bean id="factoryUserDao" class="cn.com.lgs.ioc.factory.UserDaoFactory"></bean>
     <bean id="userDao3" factory-bean="factoryUserDao" factory-method="getUserDao2"></bean>
     <!--配置userService，同时将userDao进行依赖注入-->
-    <bean id="userService" class="cn.com.lgs.service.Impl.UserServiceImpl">
+    <bean id="userService" class="cn.com.lgs.ioc.service.Impl.UserServiceImpl">
         <property name="userDao" ref="userDao"></property>
         <!--集合注入-->
         <property name="list">
@@ -51,9 +53,9 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
         </property>
     </bean>
     <!--使用p标签依赖注入-->
-    <!--<bean id="userService" class="cn.com.lgs.service.Impl.UserServiceImpl" p:userDao-ref="userDao"/>-->
+    <!--<bean id="userService" class="UserServiceImpl" p:userDao-ref="userDao"/>-->
     <!--使用构造方法进行依赖注入-->
-    <bean id="userService2" class="cn.com.lgs.service.Impl.UserServiceImpl">
+    <bean id="userService2" class="cn.com.lgs.ioc.service.Impl.UserServiceImpl">
         <constructor-arg name="userDao" ref="userDao"></constructor-arg>
     </bean>
     <!--配置数据源，连接池-->
@@ -64,7 +66,21 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
         <property name="username" value="${jdbc.username}"></property>
         <property name="password" value="${jdbc.password}"></property>
     </bean>
-
     <!--使用注解开发，进行包的扫描-->
     <context:component-scan base-package="cn.com.lgs"></context:component-scan>
+
+    <!--//////////////////////////////////////////////////////////////////////////////////////////////////-->
+    <!--下面是AOP相关配置-->
+    <!--目标对象-->
+    <bean id="Target" class="cn.com.lgs.aop.test.Target"></bean>
+    <!--切面对象-->
+    <bean id="MyAspect" class="cn.com.lgs.aop.test.MyAspect"></bean>
+    <!--配置织入 告诉spring框架，哪些方法需要进行增强-->
+    <aop:config>
+        <!--声明切面-->
+        <aop:aspect ref="MyAspect">
+            <aop:before method="before" pointcut="execution(public void cn.com.lgs.aop.test.TargetInterface.*(..))"></aop:before>
+        </aop:aspect>
+
+    </aop:config>
 </beans>

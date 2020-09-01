@@ -24,7 +24,7 @@
     xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd">
     <import resource="classpath:META-INF/cxf/cxf.xml"/>
     <import resource="classpath:META-INF/cxf/cxf-servlet.xml"/>
-    <jaxws:endpoint id="helloWorld" implementor="cn.com.lgs.UAWebServiceImpl" address="/HelloWorld">
+    <jaxws:endpoint id="helloWorld" implementor="UAWebServiceImpl" address="/HelloWorld">
     </jaxws:endpoint>
 </beans>
 <!-- END SNIPPET: beans -->

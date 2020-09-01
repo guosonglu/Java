@@ -6,7 +6,7 @@
     <!--配置servlet-->
     <servlet>
         <servlet-name>demo</servlet-name>
-        <servlet-class>cn.com.lgs.servlet.ServletDemo1</servlet-class>
+        <servlet-class>cn.com.lgs.ioc.servlet.ServletDemo1</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>demo</servlet-name>
