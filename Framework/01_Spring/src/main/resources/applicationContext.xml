@@ -81,6 +81,5 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
         <aop:aspect ref="MyAspect">
             <aop:before method="before" pointcut="execution(public void cn.com.lgs.aop.test.TargetInterface.*(..))"></aop:before>
         </aop:aspect>
-
     </aop:config>
 </beans>
