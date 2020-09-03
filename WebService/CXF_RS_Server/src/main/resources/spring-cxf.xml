@@ -4,7 +4,7 @@
        xmlns:jaxrs="http://cxf.apache.org/jaxrs"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxrs.xsd">
     <!--注册服务实现类-->
-    <bean id="weatherService" class="cn.com.lgs.ioc.WeatherServiceImpl"></bean>
+    <bean id="weatherService" class="cn.com.lgs.WeatherServiceImpl"></bean>
     <!--使用restful形式发布服务-->
 
 </beans>

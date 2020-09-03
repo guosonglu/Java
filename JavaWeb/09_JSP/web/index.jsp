@@ -1,5 +1,5 @@
 <%@ page import="java.util.List" %>
-<%@ page import="cn.com.lgs.ioc.User" %>
+<%@ page import="cn.com.lgs.User" %>
 <%@ page import="java.util.Date" %>
 <%@ page import="java.util.ArrayList" %><%--
   Created by IntelliJ IDEA.

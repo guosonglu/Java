@@ -9,26 +9,26 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
 http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
     <import resource="applicationContext2.xml"/>
 
-    <bean id="user1" class="cn.com.lgs.ioc.domain.User">
+    <bean id="user1" class="User">
         <property name="userName" value="张三"></property>
         <property name="age" value="18"></property>
     </bean>
-    <bean id="user2" class="cn.com.lgs.ioc.domain.User">
+    <bean id="user2" class="User">
         <property name="userName" value="李四"></property>
         <property name="age" value="20"></property>
     </bean>
     <!--无参构造方法-->
-    <bean id="userDao" class="cn.com.lgs.ioc.dao.Impl.UserDaoImpl" scope="prototype" init-method="init"
+    <bean id="userDao" class="cn.com.lgs.dao.Impl.UserDaoImpl" scope="prototype" init-method="init"
           destroy-method="destory">
         <property name="userName" value="张三"></property>
     </bean>
     <!--工厂静态方法获取对象-->
-    <bean id="userDao2" class="cn.com.lgs.ioc.factory.UserDaoFactory" factory-method="getUserDao1"></bean>
+    <bean id="userDao2" class="cn.com.lgs.factory.UserDaoFactory" factory-method="getUserDao1"></bean>
     <!--工厂非静态方法获取对象-->
-    <bean id="factoryUserDao" class="cn.com.lgs.ioc.factory.UserDaoFactory"></bean>
+    <bean id="factoryUserDao" class="cn.com.lgs.factory.UserDaoFactory"></bean>
     <bean id="userDao3" factory-bean="factoryUserDao" factory-method="getUserDao2"></bean>
     <!--配置userService，同时将userDao进行依赖注入-->
-    <bean id="userService" class="cn.com.lgs.ioc.service.Impl.UserServiceImpl">
+    <bean id="userService" class="cn.com.lgs.service.Impl.UserServiceImpl">
         <property name="userDao" ref="userDao"></property>
         <!--集合注入-->
         <property name="list">
@@ -55,7 +55,7 @@ http://www.springframework.org/schema/aop http://www.springframework.org/schema/
     <!--使用p标签依赖注入-->
     <!--<bean id="userService" class="UserServiceImpl" p:userDao-ref="userDao"/>-->
     <!--使用构造方法进行依赖注入-->
-    <bean id="userService2" class="cn.com.lgs.ioc.service.Impl.UserServiceImpl">
+    <bean id="userService2" class="cn.com.lgs.service.Impl.UserServiceImpl">
         <constructor-arg name="userDao" ref="userDao"></constructor-arg>
     </bean>
     <!--配置数据源，连接池-->
