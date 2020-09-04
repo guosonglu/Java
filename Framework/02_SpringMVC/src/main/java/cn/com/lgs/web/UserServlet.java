@@ -1,4 +1,4 @@
-package cn.com.lgs.controller;
+package cn.com.lgs.web;
 
 import cn.com.lgs.service.UserService;
 import cn.com.lgs.service.impl.UserServiceImpl;

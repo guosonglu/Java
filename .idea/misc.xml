@@ -3,6 +3,7 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/Framework/02_Spring_MVC" />
+    <file type="web" url="file://$PROJECT_DIR$/Framework/02_SpringMVC" />
     <file type="web" url="file://$PROJECT_DIR$/JavaWeb/Html" />
     <file type="web" url="file://$PROJECT_DIR$/WebService" />
   </component>
@@ -27,6 +28,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/Framework/02_Spring2/pom.xml" />
+        <option value="$PROJECT_DIR$/Framework/02_Spring_MVC/pom.xml" />
       </set>
     </option>
   </component>
