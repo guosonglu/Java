@@ -17,4 +17,9 @@ http://www.springframework.org/schema/context http://www.springframework.org/sch
     <!--    </property>-->
     <!--</bean>-->
     <mvc:annotation-driven/>
+    <!--配置静态资源开放-->
+    <!--<mvc:resources mapping="/js/**" location="/js/"/>-->
+    <mvc:default-servlet-handler/>
+
+
 </beans>

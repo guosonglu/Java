@@ -25,7 +25,7 @@
   <description>
     Welcome to Tomcat
   </description>
-  
+  <!--配置-->
   <context-param>
     <param-name>contextConfigLocation</param-name>
     <param-value>classpath:applicationContext.xml</param-value>
@@ -33,6 +33,7 @@
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
+  <!--配置前端控制器-->
   <servlet>
     <servlet-name>DispatcherServlet</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
