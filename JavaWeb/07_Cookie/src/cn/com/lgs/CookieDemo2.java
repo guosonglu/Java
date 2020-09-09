@@ -15,6 +15,7 @@ import java.io.IOException;
  */
 @WebServlet("/CookieDemo2")
 public class CookieDemo2 extends HttpServlet {
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Cookie[] cookies = request.getCookies();
         if(cookies!=null){
@@ -24,6 +25,7 @@ public class CookieDemo2 extends HttpServlet {
         }
     }
 
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         doPost(request, response);
     }

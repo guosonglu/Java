@@ -5,9 +5,8 @@ import cn.com.lgs.domain.UserList;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletResponse;
@@ -100,7 +99,7 @@ public class UserController {
     /*数据请求*/
     @RequestMapping("/user7")
     @ResponseBody
-    public void save7(String name,int age){
+    public void save7(@RequestParam(value = "name",required = false,defaultValue = "zhangsan") String name, int age){
         System.out.println(name);
         System.out.println(age);
     }
@@ -144,4 +143,29 @@ public class UserController {
         System.out.println(userList);
     }
 
+    /**
+     * Restful风格请求
+     * @param name
+     */
+    @RequestMapping("/save12/{name}")
+    @ResponseBody
+    public void save12(@PathVariable("name") String name){
+        System.out.println(name);
+    }
+
+    /**
+     * 获得请求头
+     * @param userAgent
+     */
+    @RequestMapping("/save13")
+    @ResponseBody
+    public void save13(@RequestHeader("User-Agent") String userAgent){
+        System.out.println(userAgent);
+    }
+
+    @RequestMapping("/save14")
+    @ResponseBody
+    public void save14(String name, MultipartFile file){
+
+    }
 }
