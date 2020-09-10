@@ -10,6 +10,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
 import javax.servlet.http.HttpServletResponse;
+import java.io.File;
 import java.io.IOException;
 import java.util.Arrays;
 import java.util.List;
@@ -163,9 +164,16 @@ public class UserController {
         System.out.println(userAgent);
     }
 
+    /**
+     * 文件上传
+     * @param name
+     * @param file
+     * @throws IOException
+     */
     @RequestMapping("/save14")
     @ResponseBody
-    public void save14(String name, MultipartFile file){
-
+    public void save14(String name, MultipartFile file) throws IOException {
+        String originalFilename = file.getOriginalFilename();
+        file.transferTo(new File("/"+originalFilename));
     }
 }
