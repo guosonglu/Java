@@ -35,8 +35,6 @@ public class JDBCUtils {
             e.printStackTrace();
         }
     }
-
-
     //获得连接
     public static Connection getConnection() throws SQLException {
         return DriverManager.getConnection(url, username, password);
