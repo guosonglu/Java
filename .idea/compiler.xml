@@ -6,70 +6,77 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="14_Abstract" />
-        <module name="02_SpringMVC" />
-        <module name="04_xml" />
-        <module name="Authority" />
-        <module name="01_Array" />
-        <module name="25_WrapperClass" />
-        <module name="33_Lambda" />
-        <module name="24_StringBuilder" />
-        <module name="11_Arrays" />
-        <module name="02_ArrayAndRam" />
-        <module name="Polymorphism" />
-        <module name="13_Extends" />
-        <module name="08_ArrayList" />
-        <module name="23_System" />
-        <module name="16_Polymorphism" />
-        <module name="20_Object" />
-        <module name="06_Scanner" />
-        <module name="Random" />
-        <module name="30_Io" />
-        <module name="26_Exception" />
-        <module name="12_Math" />
-        <module name="FunctionalInterface" />
-        <module name="17_final" />
-        <module name="00_Basic" />
-        <module name="29_Map" />
-        <module name="04_This" />
-        <module name="27_Collection" />
-        <module name="WS_Server" />
-        <module name="22_Calendar" />
-        <module name="InnerClass" />
-        <module name="10_Static" />
-        <module name="CXF_RS_Server" />
-        <module name="WrapperClass" />
-        <module name="OAuth_Server" />
-        <module name="07_Random" />
-        <module name="26_Collection" />
-        <module name="15_Interface" />
-        <module name="05_ConstructionMethod" />
-        <module name="35_Reflection" />
-        <module name="34_FunctionalInterface" />
-        <module name="WS_Client" />
-        <module name="21_Date" />
-        <module name="01_Spring" />
-        <module name="18_Authority" />
-        <module name="CXF_Server" />
-        <module name="Network" />
-        <module name="32_Network" />
-        <module name="28_Genericity" />
-        <module name="09_String" />
-        <module name="03_ObjectOriented" />
-        <module name="CXF_Client" />
         <module name="19_InnerClass" />
         <module name="CXF_Spring_Server4" />
-        <module name="02_JDBC" />
-        <module name="Java1200" />
-        <module name="31_Thread" />
+        <module name="WS_Client" />
+        <module name="09_String" />
+        <module name="26_Exception" />
+        <module name="07_Random" />
+        <module name="32_Network" />
+        <module name="02_ArrayAndRam" />
+        <module name="30_Io" />
+        <module name="11_NodeJs" />
+        <module name="33_Lambda" />
+        <module name="Random" />
+        <module name="08_ArrayList" />
+        <module name="Network" />
+        <module name="18_Authority" />
+        <module name="24_StringBuilder" />
+        <module name="05_ConstructionMethod" />
+        <module name="23_System" />
+        <module name="04_xml" />
+        <module name="02_SpringMVC" />
         <module name="01_Sql" />
+        <module name="InnerClass" />
+        <module name="CXF_RS_Server" />
+        <module name="WS_Server" />
+        <module name="15_Interface" />
+        <module name="21_Date" />
+        <module name="Java1200" />
+        <module name="00_Basic" />
+        <module name="16_Polymorphism" />
+        <module name="CXF_Client" />
+        <module name="02_JDBC" />
+        <module name="12_Math" />
+        <module name="Authority" />
+        <module name="06_Scanner" />
+        <module name="01_Spring" />
+        <module name="03_ObjectOriented" />
+        <module name="OAuth_Server" />
+        <module name="11_Arrays" />
+        <module name="04_This" />
+        <module name="01_Array" />
+        <module name="CXF_Server" />
+        <module name="31_Thread" />
+        <module name="10_Static" />
+        <module name="22_Calendar" />
+        <module name="27_Collection" />
+        <module name="14_Abstract" />
+        <module name="25_WrapperClass" />
+        <module name="29_Map" />
+        <module name="17_final" />
+        <module name="35_Reflection" />
+        <module name="FunctionalInterface" />
+        <module name="20_Object" />
+        <module name="26_Collection" />
+        <module name="10_WebSocket4" />
+        <module name="28_Genericity" />
+        <module name="34_FunctionalInterface" />
+        <module name="13_Extends" />
+        <module name="WrapperClass" />
+        <module name="Polymorphism" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="8">
       <module name="01_信息输出" target="1.5" />
       <module name="02_Spring2" target="1.5" />
       <module name="02_Spring_MVC" target="1.7" />
+      <module name="10_WebSocket" target="1.5" />
+      <module name="10_WebSocket1" target="1.5" />
+      <module name="10_WebSocket3" target="1.7" />
       <module name="Html" target="1.7" />
+      <module name="test1" target="1.7" />
+      <module name="WebSocket" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

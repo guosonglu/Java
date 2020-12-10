@@ -4,7 +4,10 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/Framework/02_Spring_MVC" />
     <file type="web" url="file://$PROJECT_DIR$/Framework/02_SpringMVC" />
+    <file type="web" url="file://$PROJECT_DIR$/JavaWeb/10_WebSocket3" />
+    <file type="web" url="file://$PROJECT_DIR$/JavaWeb/10_WebSocket4" />
     <file type="web" url="file://$PROJECT_DIR$/JavaWeb/Html" />
+    <file type="web" url="file://$PROJECT_DIR$/JavaWeb/test1" />
     <file type="web" url="file://$PROJECT_DIR$/WebService" />
   </component>
   <component name="JavadocGenerationManager">
@@ -29,6 +32,11 @@
       <set>
         <option value="$PROJECT_DIR$/Framework/02_Spring2/pom.xml" />
         <option value="$PROJECT_DIR$/Framework/02_Spring_MVC/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaWeb/10_WebSocket/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaWeb/10_WebSocket1/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaWeb/10_WebSocket3/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaWeb/WebSocket/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaWeb/test1/pom.xml" />
       </set>
     </option>
   </component>

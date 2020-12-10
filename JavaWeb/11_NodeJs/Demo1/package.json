@@ -1,0 +1,19 @@
+{
+  "name": "demo1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "lgs",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cnpm": "^6.1.1",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.2.0"
+  }
+}
