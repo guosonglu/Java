@@ -3,8 +3,6 @@
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/Framework/02_SpringMVC/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Framework/02_SpringMVC/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/JavaWeb/10_WebSocket4/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/JavaWeb/10_WebSocket4/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebService/CXF_RS_Server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/WebService/CXF_RS_Server/src/main/resources" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
